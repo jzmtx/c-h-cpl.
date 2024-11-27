@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHCPL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CHCPL</h1>
+
+    <!-- Live Scoreboard -->
+    <div class="scoreboard">
+      <h2>Live Scoreboard</h2>
+      <p><strong>Score:</strong> <span id="score">0/0</span></p>
+      <p><strong>Overs:</strong> <span id="overs">0.0</span></p>
+      <p><strong>Run Rate:</strong> <span id="runrate">0.00</span></p>
+    </div>
+
+    <!-- Batsman Stats -->
+    <div class="batsman-stats">
+      <h3>Batsmen Stats</h3>
+    </div>
+
+    <!-- Bowler Stats -->
+    <div class="bowler-stats">
+      <h3>Bowler Stats</h3>
+    </div>
+
+    <!-- Match History -->
+    <div class="match-history">
+      <h3>Match History</h3>
+      <ul id="match-list"></ul>
+    </div>
+
+    <!-- Admin Input Section -->
+    <div class="admin-panel">
+      <h3>Admin Panel</h3>
+      <form id="updateForm">
+        <!-- Match Name -->
+        <label>Match Name:</label>
+        <input type="text" id="input-match-name" placeholder="Enter Match Name">
+
+        <label>Score:</label>
+        <input type="number" id="input-score" placeholder="Enter runs">
+        <label>Wickets:</label>
+        <input type="number" id="input-wickets" placeholder="Enter wickets">
+        <label>Balls:</label>
+        <input type="number" id="input-balls" placeholder="Enter balls">
+
+        <h4>Batsman 1</h4>
+        <label>Name:</label>
+        <input type="text" id="input-batsman1-name" placeholder="Name">
+        <label>Runs:</label>
+        <input type="number" id="input-batsman1-runs" placeholder="Runs">
+        <label>Balls:</label>
+        <input type="number" id="input-batsman1-balls" placeholder="Balls">
+
+        <h4>Batsman 2</h4>
+        <label>Name:</label>
+        <input type="text" id="input-batsman2-name" placeholder="Name">
+        <label>Runs:</label>
+        <input type="number" id="input-batsman2-runs" placeholder="Runs">
+        <label>Balls:</label>
+        <input type="number" id="input-batsman2-balls" placeholder="Balls">
+
+        <h4>Bowler</h4>
+        <label>Name:</label>
+        <input type="text" id="input-bowler-name" placeholder="Name">
+        <label>Overs:</label>
+        <input type="number" id="input-bowler-overs" placeholder="Overs">
+        <label>Runs Conceded:</label>
+        <input type="number" id="input-bowler-runs" placeholder="Runs">
+        <label>Wickets:</label>
+        <input type="number" id="input-bowler-wickets" placeholder="Wickets">
+
+        <button type="button" onclick="updateStats()">Update Stats</button>
+        <button type="button" onclick="saveMatch()">Save Match</button>
+        <button type="button" onclick="resetStats()">Refresh Stats (Admin Only)</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

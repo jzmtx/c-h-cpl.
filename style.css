@@ -1,0 +1,122 @@
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Main Container */
+h1 {
+  text-align: center;
+  padding: 20px;
+  background-color:#fa0505;
+  color: #fff;
+  margin: 0;
+}
+
+/* Section Header Styles */
+h3, h4 {
+  color: #2d2d2d;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+/* Form Input Styling */
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+  color: #444;
+}
+
+input[type="text"], input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="number"] {
+  width: 120px;
+}
+
+/* Buttons Styling */
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Live Match Info Styling */
+#live-match-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#live-match-score, #live-match-runrate {
+  font-size: 18px;
+  margin-top: 5px;
+  color: #444;
+}
+
+div {
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Match History List Styling */
+#match-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#match-list li {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#match-list li:hover {
+  background-color: #e9e9e9;
+  border-color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  input[type="text"], input[type="number"] {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
